@@ -16,66 +16,6 @@ const Servicios = () => (
      esta es la pagina de inicio  
      esta es la pagina de inicio  
     </p>
-    <p className="text-lg md:text-2xl text-gray-700 max-w-2xl text-center">
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-    </p>
-    <p className="text-lg md:text-2xl text-gray-700 max-w-2xl text-center">
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-    </p>
-    <p className="text-lg md:text-2xl text-gray-700 max-w-2xl text-center">
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-    </p>
-    <p className="text-lg md:text-2xl text-gray-700 max-w-2xl text-center">
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-    </p>
-    <p className="text-lg md:text-2xl text-gray-700 max-w-2xl text-center">
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-    </p>
-    <p className="text-lg md:text-2xl text-gray-700 max-w-2xl text-center">
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-     esta es la pagina de inicio  
-    </p>
   </section>
 );
 

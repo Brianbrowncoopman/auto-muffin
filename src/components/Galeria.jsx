@@ -38,6 +38,18 @@ const fotos = [
     descripcion: "Descripción de la foto 4",
     valor: "$6.000.000",
   },
+  {
+    src: "/images/auto_7.jpg",
+    titulo: "Foto 7",
+    descripcion: "Descripción de la foto 4",
+    valor: "$7.000.000",
+  },
+  {
+    src: "/images/auto_8.jpg",
+    titulo: "Foto 8",
+    descripcion: "Descripción de la foto 4",
+    valor: "$8.000.000",
+  },
 ];
 
 const fotosCarrusel = [
@@ -47,6 +59,8 @@ const fotosCarrusel = [
   "/images/auto_3.jpg",
   "/images/auto_2.jpg",
   "/images/auto_1.jpg",
+  "/images/auto_7.jpg",
+  "/images/auto_8.jpg",
 ];
 
 const Galeria = () => {
