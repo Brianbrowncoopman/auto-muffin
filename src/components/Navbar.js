@@ -19,18 +19,19 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Inicio', to: '/' }, // Usar Link para la página de inicio
-    { name: 'Servicios', to: '/servicios' }, // Usar Link para la página de servicios
-    { name: 'Proyectos', to: '/proyectos' }, // Usar Link para la página de proyectos
+    { name: 'Inicio', to: '/' },
+    { name: 'Servicios', to: '/servicios' },
+    { name: 'Proyectos', to: '/proyectos' },
     { name: 'Sobre Nosotros', to: '/sobre-nosotros' },
     { name: 'Galeria', to: '/galeria' },
     { name: 'Contacto', to: '/contacto' },
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-gray-200 shadow-md py-2' : 'bg py-4'
-    }`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300
+      ${scrolled ? 'bg-gray-200 shadow-md py-2' : 'bg py-4'}
+      md:border-b-2 md:border-gray-700
+    `}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -69,7 +70,6 @@ const Navbar = () => {
                   </a>
                 )
               )}
-              
             </div>
           </div>
 
@@ -113,11 +113,12 @@ const Navbar = () => {
 
       {/* Menú móvil */}
       <div
-        className={`md:hidden transition-all duration-500 overflow-hidden ${
-          isOpen ? 'max-h-96' : 'max-h-0'
+        className={`md:hidden absolute top-full left-0 w-full transition-all duration-500 bg-gray-200 shadow-lg border-b-2 border-gray-300 z-40 ${
+          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
         }`}
+        style={{ transitionProperty: 'max-height, opacity' }}
       >
-        <div className="px-2 pt-2 pb-4 space-y-1 bg-gray shadow-lg">
+        <div className="px-2 pt-2 pb-2 space-y-1">
           {navItems.map((item) =>
             item.to ? (
               <Link
@@ -139,7 +140,6 @@ const Navbar = () => {
               </a>
             )
           )}
-          
         </div>
       </div>
     </nav>
