@@ -77,7 +77,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`inline-flex items-center justify-center p-2 rounded-md focus:outline-none ${
+              className={`inline-flex items-center justify-center p-2 rounded-md bg-black focus:outline-none ${
                 scrolled ? 'text-gray-700' : 'text-white'
               }`}
             >
@@ -117,7 +117,7 @@ const Navbar = () => {
           isOpen ? 'max-h-96' : 'max-h-0'
         }`}
       >
-        <div className="px-2 pt-2 pb-4 space-y-1 bg-white shadow-lg">
+        <div className="px-2 pt-2 pb-4 space-y-1 bg-gray shadow-lg">
           {navItems.map((item) =>
             item.to ? (
               <Link
