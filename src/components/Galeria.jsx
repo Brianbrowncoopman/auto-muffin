@@ -80,8 +80,19 @@ const Galeria = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-gray-200 py-8 px-2 sm:py-20">
-      <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-600 mb-4 sm:mb-6 text-center">
+    <section className="relative flex flex-col items-center justify-center min-h-screen py-20 bg-center bg-cover text-white overflow-hidden">
+    {/* Pseudo-elemento para fondo con opacidad */}
+    <div
+      className="absolute inset-0 z-0"
+      style={{
+        backgroundImage: "url('/images/patagual_1.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        opacity: 0.225, // 👈 nivel de transparencia de la imagen
+        filter: "brightness(0.6)", // opcional: para oscurecer un poco
+      }}
+    />
+      <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
         Galería de Fotos
       </h1>
       <p className="text-base sm:text-lg md:text-2xl text-gray-700 max-w-2xl text-center mb-6 sm:mb-8"></p>

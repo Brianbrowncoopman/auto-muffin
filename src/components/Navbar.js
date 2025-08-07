@@ -35,13 +35,18 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <div className="bg-gray-600 w-10 h-10 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">L</span>
-            </div>
-            <span className={`ml-3 font-bold text-xl ${
-              scrolled ? 'text-gray-800' : 'text-white'
-            }`}>Logo</span>
+          <div className="flex-shrink-20 flex items-center">
+            <img
+              src="/images/patagual_1.png"
+              alt="Logo"
+              className="w-10 h-10 rounded-lg object-contain"
+            />
+            <span
+              className={`ml-3 font-bold text-xl ${scrolled ? 'text-gray-800' : 'text-gray-800'
+                }`}
+            >
+              Patagual Autos
+            </span>
           </div>
 
           {/* Menú para desktop */}
@@ -52,9 +57,8 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     to={item.to}
-                    className={`font-medium transition-colors duration-300 hover:text-indigo-600 ${
-                      scrolled ? 'text-gray-700' : 'text-black'
-                    }`}
+                    className={`font-medium transition-colors duration-300 hover:text-indigo-600 ${scrolled ? 'text-gray-700' : 'text-black'
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -62,9 +66,8 @@ const Navbar = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className={`font-medium transition-colors duration-300 hover:text-indigo-600 ${
-                      scrolled ? 'text-gray-700' : 'text-gray-400'
-                    }`}
+                    className={`font-medium transition-colors duration-300 hover:text-indigo-600 ${scrolled ? 'text-gray-700' : 'text-gray-400'
+                      }`}
                   >
                     {item.name}
                   </a>
@@ -77,14 +80,12 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`inline-flex items-center justify-center p-2 rounded-md bg-black focus:outline-none ${
-                scrolled ? 'text-gray-700' : 'text-white'
-              }`}
+              className={`inline-flex items-center justify-center p-2 rounded-md bg-black focus:outline-none ${scrolled ? 'text-gray-700' : 'text-white'
+                }`}
             >
               <svg
-                className={`h-6 w-6 transition-transform duration-300 ${
-                  isOpen ? 'transform rotate-180' : ''
-                }`}
+                className={`h-6 w-6 transition-transform duration-300 ${isOpen ? 'transform rotate-180' : ''
+                  }`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -113,9 +114,8 @@ const Navbar = () => {
 
       {/* Menú móvil */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full transition-all duration-500 bg-gray-200 shadow-lg border-b-2 border-gray-300 z-40 ${
-          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
-        }`}
+        className={`md:hidden absolute top-full left-0 w-full transition-all duration-500 bg-gray-200 shadow-lg border-b-2 border-gray-300 z-40 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
+          }`}
         style={{ transitionProperty: 'max-height, opacity' }}
       >
         <div className="px-2 pt-2 pb-2 space-y-1">
