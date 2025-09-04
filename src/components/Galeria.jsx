@@ -67,6 +67,8 @@ const Galeria = () => {
   const [modal, setModal] = useState(null);
   const [carruselIdx, setCarruselIdx] = useState(0);
   const history = useHistory();
+  const [touchStartX, setTouchStartX] = useState(0);
+
 
   const handlePrev = () => setCarruselIdx((carruselIdx - 1 + fotosCarrusel.length) % fotosCarrusel.length);
   const handleNext = () => setCarruselIdx((carruselIdx + 1) % fotosCarrusel.length);
@@ -98,7 +100,15 @@ const Galeria = () => {
       <p className="text-base sm:text-lg md:text-2xl text-gray-700 max-w-2xl text-center mb-6 sm:mb-8"></p>
 
       {/* Carrusel */}
-      <div className="w-full max-w-xs sm:max-w-lg md:max-w-2xl mb-8 sm:mb-10 relative">
+      <div className="w-full max-w-xs sm:max-w-lg md:max-w-2xl mb-8 sm:mb-10 relative" onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
+        onTouchEnd={(e) => {
+          const touchEndX = e.changedTouches[0].clientX;
+          const deltaX = touchEndX - touchStartX;
+          if (Math.abs(deltaX) > 50) {
+            deltaX > 0 ? handlePrev() : handleNext();
+          }
+        }}
+      >
         <img
           src={fotosCarrusel[carruselIdx]}
           alt={`Carrusel ${carruselIdx + 1}`}

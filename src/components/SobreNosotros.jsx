@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const personaPrincipal = {
-  nombre: "Fco Fco",
+  nombre: "Francisco Duhalde",
   foto: "/images/persona.png",
   descripcion: "Fundador y gerente general. Apasionado por la innovación y la excelencia en el servicio.",
   email: "fcofco@gmail.com",
