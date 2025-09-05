@@ -20,7 +20,7 @@ const colaboradores = [
     nombre: "María López",
     foto: "/images/colaborador_2.jpg",
     descripcion: "Consultora de ventas especializada en vehículos de lujo.",
-    email: "dede@gmail.com fdAUsdfgiasfux,opfxmj,a'sofxkcaxoßð",
+    email: "dede@gmail.com ",
     telefono: "123456789",
   },
   {
